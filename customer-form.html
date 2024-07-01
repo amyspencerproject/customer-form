@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./scss/_fonts.css" />
     <link rel="stylesheet" href="./scss/_fontawesome-all.css" />
     <link rel="stylesheet" href="./scss/google.css" />
+
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="Page">
@@ -27,7 +29,7 @@
                 as soon as we can
               </p>
               <div class="KindForm">
-                <label class="Field"
+                <!-- <label class="Field"
                   ><div class="Field-label">Your Name</div>
                   <div class="Field-description">
                     <p></p>
@@ -39,8 +41,8 @@
                     <p>Probably not necessary</p>
                   </div>
                   <input class="Input" type="text" placeholder="" /></label
-                ><label class="Field"
-                  ><div class="Field-label">
+                ><label class="Field" > -->
+                  <div class="Field-label">
                     Is your data missing from a row or a column?
                   </div>
                   <div class="Field-description">
@@ -48,9 +50,9 @@
                   </div>
                   <div class="Select">
                     <select class="Select-select" id="drop-down">
-                      <option value="1">Rows</option>
-                      <option value="2">Columns</option>
-                      <option value="3">Something else</option></select
+                      <option id="row" ;>Rows</option>
+                      <option id="column">Columns</option>
+                      <option id="something">Something else</option></select
                     ><span class="Select-icon"
                       ><i class="Icon fas fa-chevron-down"></i
                     ></span></div
