@@ -13,62 +13,45 @@
   <body>
     <div class="Page">
       <div class="PipelineCreatePage">
-        <div class="Container"><h1>Customer Feedback Form</h1></div>
+        <div class="Container"><h1>Report Missing Data</h1></div>
         <div class="Container">
           <div class="SourceAdd">
             <div class="Group">
-              <a class="Button" type="button" href="index.html">
+              <a class="Button" type="button" href="customer-form.html">
                 <i class="Icon fas fa-arrow-left"></i>Back
               </a>
             </div>
             <div class="ConnectorForm">
-              <p>
-                Precog operates in the US time zone M-F. We will get back to you
-                as soon as we can
-              </p>
               <div class="KindForm">
-                  </label
-                ><label class="Field"
-                  ><div class="Field-label">
-                    Is your data missing from a row or a column?
-                  </div>
-                  <div class="Field-description">
-                    <p>This helps us diagnosis the issue</p>
-                  </div>
-                  <div class="Select">
-                    <select class="Select-select">
-                      <option>Rows</option>
-                      <!-- <option>Columns</option> -->
-                      <!-- <option>Something else</option></select -->
-                    ><span class="Select-icon"
-                      ><i class="Icon fas fa-chevron-down"></i
-                    ></span></div></label
-                ><label class="Field"
+                <label class="Field"
                   ><div class="Field-label">Row Names</div>
                   <div class="Field-description">
                     <p>What rows or fields are missing?</p>
                     <p>
                       Please provide the ids of as many missing records as you
-                      can (or preferable complete records) as a text file (e.g.
-                      .csv)
+                      can. We prefere complete records. Upload these records as
+                      a text file (e.g. missing-data.csv)
                     </p>
-
                   </div>
-                  <input class="Input" type="text" placeholder="" />
+
                   <button class="Button" type="button">
                     <i class="Icon fas fa-plus"></i>Upload
                   </button></label
                 ><label class="Field"
                   ><div class="Field-label">Screenshot of missing rows</div>
                   <div class="Field-description">
-                    <p>Do you have screenshots of missing data? </p>
                     <p>
-                      Please provide a screenshot of the data you are seeing
-                      that is not present in the data loaded by Precog (feel
-                      free to blur or mask any info that is sensitive)
+                      Do you have screenshots of the data you were expecting?
+                      Ids and field names are very helpful.
+                    </p>
+                    <p>
+                      Please provide screenshot(s) of your
+                      <span><code>${8x8}</code></span> data which is not present
+                      in the data loaded by Precog (feel free to blur or mask
+                      any info that is sensitive)
                     </p>
                   </div>
-                  <!-- <input class="Input" type="text" placeholder="" /> -->
+
                   <button class="Button" type="button">
                     <i class="Icon fas fa-plus"></i>Upload
                   </button></label
@@ -77,7 +60,9 @@
               <div class="Group">
                 <div class="ButtonGroup">
                   <button class="Button" type="button">
-                    <i class="Icon fas fa-plus"></i>Submit
+                    <a class="Button" type="button" href="submit.html">
+                      <i class="Icon fas fa-plus"></i>Submit
+                    </a>
                   </button>
                 </div>
               </div>

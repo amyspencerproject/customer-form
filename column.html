@@ -17,35 +17,18 @@
         <div class="Container">
           <div class="SourceAdd">
             <div class="Group">
-              <a class="Button" type="button" href="index.html">
+              <a class="Button" type="button" href="customer-form.html">
                 <i class="Icon fas fa-arrow-left"></i>Back
               </a>
             </div>
             <div class="ConnectorForm">
-              <p>
-                Precog operates in the US time zone M-F. We will get back to you
-                as soon as we can
-              </p>
               <div class="KindForm">
                 <label class="Field"
-                  ><div class="Field-label">
-                    Is your data missing from a row or a column?
-                  </div>
-                  <div class="Field-description">
-                    <p>This helps us diagnosis the issue</p>
-                  </div>
-                  <div class="Select">
-                    <select class="Select-select">
-                      <!-- <option>Rows</option> -->
-                      <option>Columns</option>
-                      <!-- <option>Something else</option></select -->
-                    ><span class="Select-icon"
-                      ><i class="Icon fas fa-chevron-down"></i
-                    ></span></div></label
-                ><label class="Field"
                   ><div class="Field-label">Column Names</div>
                   <div class="Field-description">
-                    <p>What columns or fields are missing?</p>
+                    <p>
+                      What are the names of columns or fields which are missing?
+                    </p>
                   </div>
                   <input
                     class="Input"
@@ -54,9 +37,17 @@
                 ><label class="Field"
                   ><div class="Field-label">Screenshot of missing columns</div>
                   <div class="Field-description">
-                    <p>- how do you take a screenshot of what is missing??</p>
+                    <p>
+                      Do you have screenshots of the data you were expecting?
+                      Ids and field names are very helpful.
+                    </p>
+                    <p>
+                      Please provide screenshot(s) of your
+                      <span><code>${8x8}</code></span> data which is not present
+                      in the data loaded by Precog (feel free to blur or mask
+                      any info that is sensitive)
+                    </p>
                   </div>
-                  <input class="Input" type="text" placeholder="" />
                   <button class="Button" type="button">
                     <i class="Icon fas fa-plus"></i>Upload
                   </button></label
@@ -65,7 +56,9 @@
               <div class="Group">
                 <div class="ButtonGroup">
                   <button class="Button" type="button">
-                    <i class="Icon fas fa-plus"></i>Submit
+                    <a class="Button" type="button" href="submit.html">
+                      <i class="Icon fas fa-plus"></i>Submit
+                    </a>
                   </button>
                 </div>
               </div>
