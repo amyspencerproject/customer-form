@@ -23,10 +23,30 @@
             </div>
             <div class="ConnectorForm">
               <div class="KindForm">
+                <!-- <p>
+                  Helps us diagnosis the issue by providing the following
+                  information
+                </p> -->
+                <label class="Field"
+                  ><div class="Field-label">Screenshot of missing rows</div>
+                  <div class="Field-description">
+                    <p>
+                      Please provide screenshot(s) of your
+                      <strong><code>${8x8}</code></strong> data which are not
+                      present in the data loaded by Precog (feel free to blur or
+                      mask any info that is sensitive). Ids and field names are
+                      very helpful.
+                    </p>
+                  </div>
+
+                  <button class="Button" type="button">
+                    <i class="Icon fas fa-plus"></i>Upload
+                  </button></label
+                >
                 <label class="Field"
                   ><div class="Field-label">Row Names</div>
                   <div class="Field-description">
-                    <p>What rows or fields are missing?</p>
+                    <p>What rows or records are missing?</p>
                     <p>
                       Please provide the ids of as many missing records as you
                       can. We prefere complete records. Upload these records as
@@ -37,33 +57,16 @@
                   <button class="Button" type="button">
                     <i class="Icon fas fa-plus"></i>Upload
                   </button></label
-                ><label class="Field"
-                  ><div class="Field-label">Screenshot of missing rows</div>
-                  <div class="Field-description">
-                    <p>
-                      Do you have screenshots of the data you were expecting?
-                      Ids and field names are very helpful.
-                    </p>
-                    <p>
-                      Please provide screenshot(s) of your
-                      <strong><code>${8x8}</code></strong> data which is not
-                      present in the data loaded by Precog (feel free to blur or
-                      mask any info that is sensitive)
-                    </p>
-                  </div>
-
-                  <button class="Button" type="button">
-                    <i class="Icon fas fa-plus"></i>Upload
-                  </button></label
                 >
               </div>
               <div class="Group">
                 <div class="ButtonGroup">
-                  <button class="Button" type="button">
-                    <a class="Button" type="button" href="submit.html">
-                      <i class="Icon fas fa-plus"></i>Submit
-                    </a>
-                  </button>
+                  <a class="Button" type="button" href="submit.html">
+                    <i class="Icon fas fa-plus"></i>Submit
+                  </a>
+                  <a class="Button" type="button" href="next.html">
+                    <i class="Icon fas fa-angle-double-right"></i>Next
+                  </a>
                 </div>
               </div>
             </div>

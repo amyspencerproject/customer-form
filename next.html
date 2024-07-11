@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Form Example</title>
+    <link rel="stylesheet" type="text.css" href="./scss/_normalize.css" />
+    <link rel="stylesheet" href="./scss/main.css" />
+    <link rel="stylesheet" href="./scss/_fonts.css" />
+    <link rel="stylesheet" href="./scss/_fontawesome-all.css" />
+    <link rel="stylesheet" href="./scss/google.css" />
+
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="Page">
+      <div class="PipelineCreatePage">
+        <div class="Container"><h1>Report Missing Data</h1></div>
+        <div class="Container">
+          <div class="SourceAdd">
+            <div class="Group">
+              <a class="Button" type="button" href="data-list.html">
+                <i class="Icon fas fa-arrow-left"></i>Back
+              </a>
+            </div>
+            <div class="ConnectorForm">
+              <div class="KindForm">
+                <p>
+                  Helps us diagnosis the issue by providing the following
+                  information
+                </p>
+                <div class="Field-label">
+                  Is your <code>Contacts</code>data missing from a row or a
+                  column?
+                </div>
+                <div class="Field-description"></div>
+                <div class="Select">
+                  <select class="Select-select" id="drop-down">
+                    <option id="row" ;>Rows</option>
+                    <option id="column">Columns</option>
+                    <option id="both" ;>Both</option></select
+                  ><span class="Select-icon"
+                    ><i class="Icon fas fa-chevron-down"></i
+                  ></span>
+                </div>
+                <a style="padding: 0 3px; color: grey" href="row.html">Rows</a>
+                <a style="padding: 0 3px; color: grey" href="column.html"
+                  >Columns</a
+                >
+                <a style="padding: 0 3px; color: grey" href="both.html">Both</a>
+              </div>
+              <div class="Group">
+                <div class="ButtonGroup">
+                  <a class="Button" type="button" href="index.html">
+                    <i class="Icon fas fa-arrow-left"></i>Return to Pipeline
+                  </a>
+                  <a class="Button" type="button" href="submit.html">
+                    <i class="Icon fas fa-plus"></i>Submit
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
