@@ -1,0 +1,55 @@
+<div class="BoxList">
+  <li class="Box">
+    <span class="Box-title">Data_sheet Sheet1</span
+    ><span class="StatusLine"
+      >Action required at
+      <span class="TimestampDisplay" title="Mon, 22 Jan 2024 07:31:18 UTC"
+        >Mon, 22 Jan 2024 01:31:18</span
+      ></span
+    >
+    <div class="ButtonGroup Box-actions">
+      <button class="Button" type="button">
+        <i class="Icon fas fa-exclamation-triangle"></i>More info
+      </button>
+    </div>
+  </li>
+</div>
+
+<!-- once the button is selected this dialog opens in the UI -->
+<div class="DialogContainer">
+  <div class="Dialog">
+    <h1 class="Dialog-title">More info: Data_sheet Sheet1</h1>
+    <div class="Dialog-content">
+      <p>
+        Your Google Cloud Service Account does not have the correct permissions
+        to enable Precog to write data.
+      </p>
+      <p>
+        Go to https://cloud.google.com then make sure you are in the desired
+        Google Cloud project. Click the menu at the top left, then click IAM
+        &amp; Admin, then click Service Accounts.
+      </p>
+      <p>
+        Click Create Service Account, name the account Precog then click Create
+        And Continue. Next click Select a role and type "BigQuery User" then
+        click BigQuery User (not BigQuery Job User or BigQuery Read Session
+        User). Next click the white "Continue" button then click "Done".
+      </p>
+      <p>
+        Click the service account email e.g.
+        precog@example.iam.gserviceaccount.com then click Keys, click "Add key",
+        click "Create new key" then click "Create".
+      </p>
+      <p>Note that billing needs to be enabled in your Google Cloud project.</p>
+      <p>
+        In your Precog pipeline click "Edit destination" then upload the file
+        which was downloaded in the previous step, then try again.
+      </p>
+    </div>
+    <div class="ButtonGroup Dialog-buttons">
+      <button class="Button Dialog-button" type="button">
+        <i class="Icon fas fa-times"></i>Close
+      </button>
+    </div>
+  </div>
+</div>
