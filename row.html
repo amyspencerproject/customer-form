@@ -13,7 +13,7 @@
   <body>
     <div class="Page">
       <div class="PipelineCreatePage">
-        <div class="Container"><h1>Report missing data</h1></div>
+        <div class="Container"><h1>Report data issue</h1></div>
         <div class="Container">
           <div class="SourceAdd">
             <div class="Group">
@@ -23,10 +23,24 @@
             </div>
             <div class="ConnectorForm">
               <div class="KindForm">
-                <!-- <p>
-                  Helps us diagnosis the issue by providing the following
-                  information
-                </p> -->
+                <p>Do you have duplicate <code>${dataset-1}</code> data?</p>
+                <label class="Field"
+                  ><div class="Field-label">Screenshot of duplicate rows</div>
+                  <div class="Field-description">
+                    <p>
+                      Please provide a screenshot(s) of your
+                      <strong><code>${source}</code></strong> duplicate data
+                      loaded by Precog (feel free to blur or mask any info that
+                      is sensitive). Ids and field names are very helpful.
+                    </p>
+                  </div>
+
+                  <button class="Button" type="button">
+                    <i class="Icon fas fa-arrow-up"></i>Upload
+                  </button></label
+                >
+
+                <p>Are you missing <code>${dataset-1}</code> data?</p>
                 <label class="Field"
                   ><div class="Field-label">Screenshot of missing rows</div>
                   <div class="Field-description">
@@ -45,14 +59,14 @@
                 >
                 <label class="Field"
                   ><div class="Field-label">
-                    What rows or records are missing?
+                    What rows are either duplicated or missing?
                   </div>
                   <div class="Field-description">
                     <p></p>
                     <p>
-                      Please provide the ids of as many missing records as you
-                      can. We prefer complete records. Upload these records as a
-                      text file (e.g. missing-data.csv).
+                      Please provide the ids of as many records as you can. We
+                      prefer complete records. Upload these records as a text
+                      file (e.g. missing-data.csv).
                     </p>
                   </div>
 

@@ -23,15 +23,33 @@
             </div>
             <div class="ConnectorForm">
               <div class="KindForm">
+                <p>Do you have duplicate <code>${dataset-1}</code> data?</p>
+                <label class="Field"
+                  ><div class="Field-label">Screenshot of duplicate rows</div>
+                  <div class="Field-description">
+                    <p>
+                      Please provide a screenshot(s) of your
+                      <strong><code>${source}</code></strong> duplicate data
+                      loaded by Precog (feel free to blur or mask any info that
+                      is sensitive). Ids and field names are very helpful.
+                    </p>
+                  </div>
+
+                  <button class="Button" type="button">
+                    <i class="Icon fas fa-arrow-up"></i>Upload
+                  </button></label
+                >
+
+                <p>Are you missing <code>${dataset-1}</code> data?</p>
                 <label class="Field"
                   ><div class="Field-label">Screenshot of missing rows</div>
                   <div class="Field-description">
                     <p>
-                      Please provide screenshot(s) of your
-                      <strong><code>${8x8}</code></strong> data which are not
-                      present in the data loaded by Precog (feel free to blur or
-                      mask any info that is sensitive). Ids and field names are
-                      very helpful.
+                      Please provide a screenshot(s) of your
+                      <strong><code>${source}</code></strong> data not present
+                      in the data loaded by Precog (feel free to blur or mask
+                      any info that is sensitive). Ids and field names are very
+                      helpful.
                     </p>
                   </div>
 
@@ -40,13 +58,15 @@
                   </button></label
                 >
                 <label class="Field"
-                  ><div class="Field-label">Row Names</div>
+                  ><div class="Field-label">
+                    What rows are either duplicated or missing?
+                  </div>
                   <div class="Field-description">
-                    <p>What rows or records are missing?</p>
+                    <p></p>
                     <p>
-                      Please provide the ids of as many missing records as you
-                      can. We prefere complete records. Upload these records as
-                      a text file (e.g. missing-data.csv)
+                      Please provide the ids of as many records as you can. We
+                      prefer complete records. Upload these records as a text
+                      file (e.g. missing-data.csv).
                     </p>
                   </div>
 
